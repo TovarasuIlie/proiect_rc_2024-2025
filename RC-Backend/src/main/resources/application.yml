@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: RC-Backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_rc
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  flyway:
+    user: root
+    password:
+    schemas: db_rc
+    url: jdbc:mysql://localhost:3306/db_rc

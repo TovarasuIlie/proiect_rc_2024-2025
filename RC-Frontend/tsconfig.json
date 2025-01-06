@@ -1,0 +1,18 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+, "services/auth_service/auth_service.js", "route/protect_route.js", "redux/AppWrapper.js", "redux/AppWrapper.js", "redux/auth_slice.js", "app/index.jsx", "app/+not-found.jsx", "app/_layout.jsx", "app/auth/register.jsx", "app/auth/login.jsx", "app/(tabs)/_layout.jsx", "app/(tabs)/settings.jsx", "app/(tabs)/index.jsx"  ]
+}
