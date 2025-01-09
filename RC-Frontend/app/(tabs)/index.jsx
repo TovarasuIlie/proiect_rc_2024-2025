@@ -13,7 +13,7 @@ const HomePage = () => {
   const [potValue, setPotValue] = useState({temperature: 0, humidity: 0});
 
   useEffect(() => {
-    const sock = new SockJS("http://192.168.0.215:8080/ws");
+    const sock = new SockJS("http://192.168.10.2:8080/ws");
     const client = Stomp.over(sock);
     setStompClient(client);
   }, []);

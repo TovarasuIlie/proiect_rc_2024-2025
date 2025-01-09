@@ -41,7 +41,7 @@ public class SettingsService {
     private void sendSettings(Integer temperature, Integer threshold) {
         RestTemplate restTemplate = new RestTemplate();
 
-        String uri = "http://192.168.0.236:80/set-temperature?temperature=" + temperature + "&threshold=" + threshold; // or any other uri
+        String uri = "http://192.168.10.3:80/set-temperature?temperature=" + temperature + "&threshold=" + threshold; // or any other uri
 
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
@@ -54,7 +54,7 @@ public class SettingsService {
     private void sendTurnOnSignal(boolean status) {
         RestTemplate restTemplate = new RestTemplate();
 
-        String uri = "http://192.168.0.236:80/testing-fan?fanStatus=" + status; // or any other uri
+        String uri = "http://192.168.10.3:80/testing-fan?fanStatus=" + status; // or any other uri
 
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
